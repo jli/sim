@@ -1,0 +1,9 @@
+[package]
+name = "sim"
+version = "0.1.0"
+authors = ["john li <jli@circularly.org>"]
+edition = "2018"
+
+[dependencies]
+anyhow = "1"
+structopt = "0"
