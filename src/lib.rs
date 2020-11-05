@@ -1,3 +1,5 @@
+use log;
+
 #[derive(Debug)]
 pub struct Human {
     name: String,
@@ -25,7 +27,7 @@ pub struct World {
 
 impl World {
     pub fn new() -> Self {
-        println!("world: loading humans...");
+        log::info!("world: loading humans...");
         Self {
             age: 0,
             humans: vec![Human::new(), Human::new()],
